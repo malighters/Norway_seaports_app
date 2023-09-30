@@ -1,14 +1,14 @@
-import Row from 'react-bootstrap/Row';
+/* eslint-disable react/prop-types */
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { Port } from './Port';
-import { data } from '../../data';
-import { Container } from 'react-bootstrap'
 
-export const CardBlock = () => {
+export const Additional = ({ seaports }) => {
   return (
     <Container>
       <Row sm={4} s={1} className="g-2">
-      {data.seaports.map(el => (
+      {seaports.map(el => (
         <Col key={el.id}>
           <Port 
               key={el.id} 
@@ -20,6 +20,5 @@ export const CardBlock = () => {
         </Col> ))}
       </Row>
     </Container>
-    
   )
 }
