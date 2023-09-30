@@ -8,7 +8,7 @@ export const Additional = ({ seaports }) => {
   return (
     <Container>
       <Row sm={4} s={1} className="g-2">
-      {seaports.map(el => (
+      { seaports.map(el => (
         <Col key={el.id}>
           <Port 
               key={el.id} 
@@ -17,7 +17,7 @@ export const Additional = ({ seaports }) => {
               description={el.description} 
               link={el.link}
             />
-        </Col> ))}
+        </Col> )) }
       </Row>
     </Container>
   )
