@@ -6,6 +6,7 @@ import Image from 'react-bootstrap/Image'
 import { Button } from 'react-bootstrap'
 import { Header } from './components/Header'
 import { CardBlock } from './components/CardBlock'
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         </Container>
         <CardBlock />
      </main>
+     <Footer />
     </>
   )
 }
